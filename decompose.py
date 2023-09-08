@@ -8,7 +8,7 @@ print('DATA Imported!')
 lev, j, k = 5, len(raw_data), len(raw_data[0]) 
 
 timescale = np.zeros((lev,j,k))
-for nodes in range(0,100):#len(raw_data)):
+for nodes in range(0,len(raw_data)):
     signal = raw_data[:,nodes]
     detail, approx = modwt(signal, 'sym4', lev)
     j = 0
