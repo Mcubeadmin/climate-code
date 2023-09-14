@@ -2,8 +2,8 @@ import numpy as np
 from modwt import modwt 
 print('Importing Info about the Data frame ...') 
 file_path = 'trans_data_olr.dat'
-nodes = np.genfromtxt(file_path, delimiter = ' ', max_rows = 1).shape[0]
-
+#nodes = np.genfromtxt(file_path, delimiter = ' ', max_rows = 1).shape[0]
+#Manual entry of nodes
 initial = int(input('Enter the initial node: ')) 
 final = int(input('Enter the final node: '))
 
